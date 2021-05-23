@@ -20,7 +20,7 @@ function SearchResults(props) {
                      </th>
                      <th
                      className="cursor"
-                     onClick={() => props.sortedSearch("location.country")}>
+                     onClick={() => props.sortedSearch("location")}>
                          Location
                          </th>
                      <th
