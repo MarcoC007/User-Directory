@@ -1,0 +1,16 @@
+
+tbody {
+    background-color:rgb(49, 48, 48) ;
+    color: white;
+    border-radius: 5px;
+}
+
+.text {
+    background-color: darkorange;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    padding-top: 15%;
+}

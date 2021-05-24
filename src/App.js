@@ -2,10 +2,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import API from './utils/API';
-import Jumbotron from './components/Jumbotron';
-import SearchForm from './components/SearchForm';
-import Container from './components/Container';
-import SearchResults from './components/SearchResults';
+import Jumbotron from './components/Jumbotron/Jumbotron';
+import SearchForm from './components/SearchForm/SearchForm';
+import Container from './components/Container/Container';
+import SearchResults from './components/SearchResults/SearchResults';
 
 class App extends Component {
   state = {
@@ -78,7 +78,7 @@ class App extends Component {
   };
 
   sortedSearch = (event) => {
-      const sortedRes = this.state.results.sort((a , b) => {
+      const sortedRes = this.state.users.sort((a , b) => {
        
         let firstComponent = "";
        let secondComponent = "";

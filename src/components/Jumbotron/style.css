@@ -1,0 +1,21 @@
+h1.jumbotron {
+    background-color: darkorange; 
+    text-align: center; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:darkorange;
+    font-size: 45px;
+}
+
+p.text {
+    text-align: center;
+    font-size: 65px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 5%;
+    color:rgb(49, 48, 48);
+    
+}
+
+div.jumbotron {
+    border-radius: 3px;
+    background-color: darkorange;
+}

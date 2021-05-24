@@ -1,30 +1,35 @@
 import React from 'react';
+import Table from 'react-bootstrap/Table';
+import './style.css';
 
 function SearchResults(props) {
     return (
      
-        <div className="list-group">
+        <div className="table">
             {props.users.length ? (
-                <table>
+                <Table variant="dark" responsive="md" className="table">
                     <tr>
-                     <th>Picture</th>
                      <th 
-                     className="cursor"
+                     className="text">
+                         Picture
+                         </th>
+                     <th 
+                     className="text"
                      onClick={() => props.sortedSearch("last")}>
                          Name
                          </th>
                      <th
-                     className="cursor"
+                     className="text"
                      onClick={() => props.sortedSearch("email")}>
                      Email
                      </th>
                      <th
-                     className="cursor"
+                     className="text"
                      onClick={() => props.sortedSearch("location")}>
                          Location
                          </th>
                      <th
-                     className="cursor"
+                     className="text"
                      onClick={() => props.sortedSearch("dob")}>
                          DoB
                          </th>
@@ -51,7 +56,7 @@ function SearchResults(props) {
                             </tr>
                         ))}
                     </tbody>
-                </table>
+                </Table>
             ) : (
                 <h2>No results found!</h2>
                 )}
